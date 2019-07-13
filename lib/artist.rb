@@ -7,6 +7,10 @@ class Artist
     @songs = []
   end
   
+  def songs
+    @songs
+  end
+  
   def add_song (song)
     @songs << song
   end
@@ -20,7 +24,7 @@ class Artist
   end
   
   def print_songs
-    @songs
+    puts @songs
   end
   
 end
