@@ -28,7 +28,7 @@ class Artist
     if !self.all.detect {|artist| artist.name == name}
       self.new(name)
     else
-      
+      self.all.detect {|artist| artist.name == name}
     end
   end
   
