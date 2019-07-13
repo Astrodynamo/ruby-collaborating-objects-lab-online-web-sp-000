@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    Dir["#{@path}/*.mp3"].map {|filename| filename.sub()
+    Dir["#{@path}/*.mp3"].map {|filename| filename.sub("#{@path}/", "")}
   end
   
   def import
